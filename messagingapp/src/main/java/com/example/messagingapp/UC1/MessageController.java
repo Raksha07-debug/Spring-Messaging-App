@@ -10,4 +10,9 @@ public class MessageController {
     public String sayHello() {
         return "Hello from BridgeLabz";
     }
+
+    @GetMapping("/query")
+    public String sayHelloName(@RequestParam String name) {
+        return "Hello " + name + " from BridgeLabz";
+    }
 }
